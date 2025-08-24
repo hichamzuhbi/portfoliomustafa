@@ -146,6 +146,15 @@ footer {
 }
 /* Media Query للشاشات الصغيرة */
 @media (max-width: 768px) {
+  
+.credentials-gallery img {
+  width: 280px;
+  height: 320px;
+  object-fit: fill;
+  border-radius: 10px;
+  border: 2px solid #ffffff22;
+  transition: transform 0.4s ease;
+}
   #typed-name {
     font-size: 1.8rem; /* صغر الحجم */
   }
