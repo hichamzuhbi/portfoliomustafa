@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e0e;
+    color: #f5f5f5;
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    background: #1a1a2e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #8e2de2;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav .active {
+    color: #8e2de2;
+  }
+  
+  /* Hero */
+  .hero-cyber {
+    background: linear-gradient(to right, #1f1f2e, #191933);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero-cyber h1 {
+    font-size: 2.5rem;
+    color: #8e2de2;
+  }
+  
+  .hero-cyber p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Main Content */
+  .cyber-content {
+    padding: 4rem 2rem;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .cyber-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #8e2de2;
+  }
+  
+  .cyber-content ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .cyber-content ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .cyber-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Gallery */
+  .testimonial-gallery {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .testimonial-gallery h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #8e2de2;
+  }
+  
+  .images {
+    /* height: 400px; */
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .images img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ffffff20;
+  }
+  
+  .videos {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .videos video {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 2rem;
+    color: #aaa;
+  }
+  
+  /* Fade-in Animation */
+  .cyber-content,
+  .hero-cyber {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  

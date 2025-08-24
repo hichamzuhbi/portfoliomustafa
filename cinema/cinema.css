@@ -1,0 +1,139 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+header {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #e94560;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav .active {
+  color: #e94560;
+}
+
+/* Hero */
+.hero-cinema {
+  background: linear-gradient(to right, #1f1f2e, #191933);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-cinema h1 {
+  font-size: 2.5rem;
+  color: #e94560;
+}
+
+.hero-cinema p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Content */
+.cinema-content {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+}
+
+.cinema-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e94560;
+}
+
+.cinema-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Gallery */
+.series-gallery,
+.credentials-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.series-gallery img,
+.credentials-gallery img {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ffffff22;
+  transition: transform 0.4s ease;
+}
+
+.series-gallery img:hover,
+.credentials-gallery img:hover {
+  transform: scale(1.05);
+}
+.videoFlimming {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ffffff22;
+  transition: transform 0.4s ease;
+}
+.credentials-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.credentials-gallery img {
+  width: 400px;
+  height: 380px;
+  object-fit: fill;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
+
+/* Animation */
+.cinema-content,
+.hero-cinema {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
