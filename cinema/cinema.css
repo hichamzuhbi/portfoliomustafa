@@ -137,3 +137,51 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+.menu-toggle {
+  display: none; /* اخفاء على الشاشات الكبيرة */
+  font-size: 2.5rem; /* حجم مناسب */
+  cursor: pointer;
+  color: #f5f5f5;
+  z-index: 1001; /* فوق كل شيء */
+}
+/* Media Query للشاشات الصغيرة */
+@media (max-width: 768px) {
+  #typed-name {
+    font-size: 1.8rem; /* صغر الحجم */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* صغر حجم العنوان الفرعي */
+  }
+
+  .profile-pic {
+    width: 200px; /* صغر صورة البروفايل */
+    height: 200px;
+  }
+  nav ul.nav-list {
+    display: none; /* أخفي القائمة بشكل افتراضي */
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute; /* مهم ليظهر فوق باقي العناصر */
+    top: 0px; /* بعد الهيدر */
+    right: 0px;
+    width: 220px;
+    border-radius: 8px;
+    padding: 1rem 0;
+    z-index: 1000; /* اجعلها فوق كل شيء */
+  }
+
+  nav ul.nav-list li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .menu-toggle {
+    display: block; /* أظهر زر القائمة */
+    size: 1rem;
+  }
+
+  nav ul.nav-list.active {
+    display: flex; /* أظهر القائمة عند الضغط على الزر */
+  }
+}

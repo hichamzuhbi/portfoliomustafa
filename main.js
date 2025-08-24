@@ -1,5 +1,7 @@
-const nameText = 'Moustafa Fadel Outour';
-const nameEl = document.getElementById('typed-name');
+const nameText = "Moustafa Fadel Outour";
+const nameEl = document.getElementById("typed-name");
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
 let index = 0;
 
 function typeEffect() {
@@ -8,16 +10,21 @@ function typeEffect() {
     index++;
     setTimeout(typeEffect, 100);
   } else {
-    nameEl.style.borderRight = 'none';
+    nameEl.style.borderRight = "none";
     showSubtitle();
   }
 }
 
 function showSubtitle() {
-  const subtitle = document.querySelector('.subtitle');
+  const subtitle = document.querySelector(".subtitle");
   subtitle.style.opacity = 1;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   typeEffect();
+});
+
+
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('active');
 });

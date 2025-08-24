@@ -1,103 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f0f17;
-    color: #f5f5f5;
-    line-height: 1.7;
-  }
-  
-  /* Header */
-  header {
-    background: #1a1a2e;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #8e2de2;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav a {
-    color: #f5f5f5;
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
-  
-  nav a:hover,
-  nav .active {
-    color: #8e2de2;
-  }
-  
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    height: max-content;
-    padding: 4rem 2rem;
-    background: linear-gradient(to right, #1a1a2e, #16213e);
-  }
-  
-  .profile-pic {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #8e2de2;
-    margin-bottom: 1rem;
-  }
-  
-  #typed-name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #f5f5f5;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    /* opacity: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0f0f17;
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #8e2de2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav .active {
+  color: #8e2de2;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  height: max-content;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #8e2de2;
+  margin-bottom: 1rem;
+}
+
+#typed-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #f5f5f5;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  /* opacity: 0;
     transition: 1.8s ease; */
+}
+
+/* Intro Section */
+.intro {
+  padding: 4rem 2rem;
+}
+
+.intro h2 {
+  text-align: center;
+  color: #8e2de2;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+/* Media Query للشاشات الصغيرة */
+@media (max-width: 768px) {
+  #typed-name {
+    font-size: 1.8rem; /* صغر الحجم */
   }
-  
-  /* Intro Section */
-  .intro {
-    padding: 4rem 2rem;
+
+  .subtitle {
+    font-size: 1rem; /* صغر حجم العنوان الفرعي */
   }
-  
-  .intro h2 {
+
+  .profile-pic {
+    width: 200px; /* صغر صورة البروفايل */
+    height: 200px;
+  }
+  nav ul.nav-list {
+    display: none; /* أخفي القائمة بشكل افتراضي */
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute; /* مهم ليظهر فوق باقي العناصر */
+    top: 0px; /* بعد الهيدر */
+    right: 0px;
+    width: 220px;
+    border-radius: 8px;
+    padding: 1rem 0;
+    z-index: 1000; /* اجعلها فوق كل شيء */
+  }
+
+  nav ul.nav-list li {
     text-align: center;
-    color: #8e2de2;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin: 0.5rem 0;
   }
-  
-  .intro p {
-    max-width: 800px;
-    margin: 1rem auto;
-    font-size: 1.1rem;
+
+  .menu-toggle {
+    display: block; /* أظهر زر القائمة */
+    size: 1rem;
   }
-  
-  /* Footer */
-  footer {
-    background: #111;
-    text-align: center;
-    padding: 2rem;
-    color: #888;
+
+  nav ul.nav-list.active {
+    display: flex; /* أظهر القائمة عند الضغط على الزر */
   }
-  
+}
