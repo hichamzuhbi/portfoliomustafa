@@ -149,7 +149,7 @@ header {
   }
   .menu-toggle {
   display: none; /* اخفاء على الشاشات الكبيرة */
-  font-size: 2.5rem; /* حجم مناسب */
+  font-size: 1.5rem; /* حجم مناسب */
   cursor: pointer;
   color: #f5f5f5;
   z-index: 1001; /* فوق كل شيء */
