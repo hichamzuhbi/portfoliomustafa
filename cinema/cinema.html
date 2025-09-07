@@ -1,98 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinematography | Moustafa Outour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/cinema/cinema.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="logo">Moustafa Outour</div>
-
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/index.html">Home</a></li>
-          <li>
-            <a href="/cybersecurity/cyberandsocialpage.html"
-              >Cybersecurity & Social Media</a
-            >
-          </li>
-          <li>
-            <a href="/cinema/cinema.html" class="active">Cinematography</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <div class="logo">Moustafa Outour</div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/cybersecurity/cyberandsocialpage.html">Cybersecurity & Social Media</a></li>
+                <li><a href="/cinema/cinema.html" class="active">Cinematography</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </header>
 
     <section class="hero-cinema">
-      <h1>Cinematography</h1>
-      <p>Behind the Camera | Telling Stories Visually</p>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="hero-content">
+            <h2>Cinematography</h2>
+            <p>Behind the Camera | Telling Stories Visually</p>
+            <a href="#work" class="cta-button">Explore My Work</a>
+        </div>
     </section>
 
-    <section class="cinema-content">
-      <div class="container">
-        <h2>My Work in Film & TV</h2>
-        <p>
-          I’ve worked as a cinematographer and assistant cameraman on major Arab
-          series such as <strong>الأجهر,</strong> <strong>العتاولة,</strong>
-          <strong>٢٢٠يوم</strong>, <br><strong>ورد و شوكولاتة</strong>
-          handling professional gear like <i>Alexa Mini, Alexa mini LF, Alexa 35, Ronin R2, Cooke
-          lenses, and all kinds of Sony cameras</i>. I’ve collaborated with top production teams and celebrities
-          across the Arab world.
-          
-
-        </p>
-
-        <h2>Series & Behind the Scenes</h2>
-        <div class="series-gallery">
-          <img
-            src="/imageandvideos/with-actor1.jpg"
-            alt="With Ahmed El Sakka"
-          />
-          <img src="/imageandvideos/with-actor2.jpg" alt="With Celebrity" />
-
-          <video
-            class="videoFlimming"
-            controls
-            src="/imageandvideos/FlimigYou.mp4"
-          ></video>
-          <img src="/imageandvideos/ajhar-scene.jpg" alt="Al Ajhar Series" />
-          <img src="/imageandvideos/atawla-scene.jpg" alt="Atawla Series" />
-          <img src="/imageandvideos/onset.jpg" alt="On Set" />
-          <img src="/imageandvideos/cameramustafa.jpg" alt="camera1" />
-          <img src="/imageandvideos/mustafacamer2.jpg" alt="camera2" />
-          <img src="/imageandvideos/mustafacamer3.jpg" alt="camera3" />
+    <section class="work-experience fade-in" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h3>Professional Experience</h3>
+                <p>Working with top-tier equipment and collaborating with renowned Arab celebrities and production teams</p>
+            </div>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h4>Major Arab Series</h4>
+                    <p>Cinematographer and Assistant Cameraman on acclaimed series including <strong>الأجهر</strong>, <strong>العتاولة</strong>, <strong>٢٢٠يوم</strong>, and <strong>ورد و شوكولاتة</strong>.</p>
+                </div>
+                
+                <div class="experience-card">
+                    <h4>Professional Equipment</h4>
+                    <p>Expert handling of <em>Alexa Mini</em>, <em>Alexa Mini LF</em>, <em>Alexa 35</em>, <em>Ronin R2</em>, <em>Cooke lenses</em>, and comprehensive Sony camera systems.</p>
+                </div>
+                
+                <div class="experience-card">
+                    <h4>Industry Collaboration</h4>
+                    <p>Worked alongside top production teams and celebrated Arab world celebrities, delivering exceptional visual storytelling.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h2>Credentials</h2>
-        <div class="credentials-gallery">
-          <img
-            src="/imageandvideos/arabmedia-pass.jpg"
-            alt="Arab Media / Gulf Today Pass"
-          />
-          <img
-            src="/imageandvideos/artist-union-card.jpg"
-            alt="Artists Syndicate Card"
-          />
+    <section class="gallery-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h3>Behind the Scenes</h3>
+                <p>A glimpse into the world of professional cinematography</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/imageandvideos/with-actor1.jpg" alt="With Ahmed El Sakka">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/with-actor2.jpg" alt="With Celebrity">
+                </div>
+                <div class="gallery-item">
+                    <video controls src="/imageandvideos/FlimigYou.mp4"></video>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/ajhar-scene.jpg" alt="Al Ajhar Series">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/atawla-scene.jpg" alt="Atawla Series">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/onset.jpg" alt="On Set">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/cameramustafa.jpg" alt="Professional Setup">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/mustafacamer2.jpg" alt="Camera Work">
+                </div>
+                <div class="gallery-item">
+                    <img src="/imageandvideos/mustafacamer3.jpg" alt="Production">
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h2>Let’s Work Together</h2>
-        <p>
-          Need a cameraman or DOP for your next production? Contact me at
-          <a href="mailto:kautour@yahoo.com">kautour@yahoo.com</a> or via
-          <a href="https://www.instagram.com/mustafa.otour" target="_blank"
-            >Instagram</a
-          >.
-        </p>
-      </div>
+    <section class="credentials-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h3>Credentials</h3>
+                <p>Professional certifications and industry recognition</p>
+            </div>
+            
+            <div class="credentials-grid">
+                <div class="credential-item">
+                    <img src="/imageandvideos/arabmedia-pass.jpg" alt="Arab Media / Gulf Today Pass">
+                </div>
+                <div class="credential-item">
+                    <img src="/imageandvideos/artist-union-card.jpg" alt="Artists Syndicate Card">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section fade-in">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <h3>Let's Create Together</h3>
+                    <p>Need a skilled cameraman or Director of Photography for your next production? Let's bring your vision to life.</p>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="mailto:kautour@yahoo.com" class="contact-link">
+                        📧 Email Me
+                    </a>
+                    <a href="https://www.instagram.com/mustafa.otour" target="_blank" class="contact-link">
+                        📸 Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-      <p>© 2025 Moustafa Fadel Outour</p>
+        <p>© 2025 Moustafa Fadel Outour - Cinematographer</p>
     </footer>
 
     <script src="/cinema/cinema.js"></script>
-  </body>
+</body>
 </html>

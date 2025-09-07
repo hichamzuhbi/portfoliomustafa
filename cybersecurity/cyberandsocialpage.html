@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity & Social Media | Moustafa Outour</title>
-  <link rel="stylesheet" href="/cybersecurity/cyberandsocialpage.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity & Social Media | Moustafa Outour</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/cybersecurity/cyberandsocialpage.css" />
+  </head>
+  <body>
+    <div class="matrix-bg" id="matrix-bg"></div>
 
-  <header>
+    <header>
       <div class="logo">Moustafa Outour</div>
-
       <nav>
-        <ul class="nav-list">
-          <li><a href="/index.html" >Home</a></li>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="/index.html">Home</a></li>
           <li>
             <a href="/cybersecurity/cyberandsocialpage.html" class="active"
               >Cybersecurity & Social Media</a
@@ -25,48 +29,173 @@
       <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </header>
 
-  <section class="hero-cyber">
-    <h1>Cybersecurity & Social Media</h1>
-    <p>Protecting Digital Lives | Securing Online Presence</p>
-  </section>
+    <section class="hero-cyber">
+      <div class="cyber-grid"></div>
+      <div class="cyber-element"></div>
+      <div class="cyber-element"></div>
+      <div class="cyber-element"></div>
+      <div class="cyber-element"></div>
+      <div class="hero-content">
+        <h1>Cybersecurity & Social Media</h1>
+        <p>Protecting Digital Lives | Securing Online Presence</p>
+        <a href="#services" class="cta-button">Explore Services</a>
+      </div>
+    </section>
 
-  <section class="cyber-content">
-    <div class="container">
-      <h2>What I Do</h2>
-      <ul>
-        <li>Recovering hacked and disabled accounts (Instagram, Facebook, WhatsApp, Twitter, LinkedIn...)</li>
-        <li>Securing influencers’ profiles against phishing and social engineering</li>
-        <li>Implementing protection on apps, websites, and servers</li>
-        <li>Using AI tools to detect and stop suspicious activities</li>
-        <li>Training clients on secure digital behavior</li>
-      </ul>
-
-      <h2>Achievements</h2>
-      <p>Over <strong>500+ accounts recovered</strong> for influencers, businesses, and public figures across the Arab region.</p>
-
-      <div class="testimonial-gallery">
-        <h3>Client Testimonials & Highlights</h3>
-
-        <div class="images">
-          <img src="/imageandvideos/recovery-client1.jpg" alt="Recovered Client 1">
-          <img src="/imageandvideos/recovery-client2.jpg" alt="Recovered Client 2">
+    <section class="cyber-content fade-in" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h3>What I Do</h3>
+          <p>
+            Advanced cybersecurity solutions and digital protection services
+          </p>
         </div>
 
-        <div class="videos">
-          <video controls src="/imageandvideos/cyber-highlight1.mp4"></video>
-          <video controls src="/imageandvideos/cyber-highlight2.mp4"></video>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🔐</div>
+            <h4>Account Recovery</h4>
+            <p>
+              Recovering hacked and disabled accounts across all major platforms
+              including Instagram, Facebook, WhatsApp, Twitter, and LinkedIn
+              with advanced recovery techniques.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🛡️</div>
+            <h4>Influencer Protection</h4>
+            <p>
+              Securing influencers' profiles against sophisticated phishing
+              attacks, social engineering, and unauthorized access attempts.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h4>Infrastructure Security</h4>
+            <p>
+              Implementing comprehensive protection on applications, websites,
+              and servers with multi-layered security protocols.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🤖</div>
+            <h4>AI-Powered Detection</h4>
+            <p>
+              Using advanced AI tools and machine learning algorithms to detect
+              and neutralize suspicious activities in real-time.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎓</div>
+            <h4>Security Training</h4>
+            <p>
+              Training clients on secure digital behavior, threat awareness, and
+              best practices for maintaining online safety.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h4>Emergency Response</h4>
+            <p>
+              24/7 rapid response team for urgent security incidents, breaches,
+              and account compromises requiring immediate attention.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <h2>Let’s Work Together</h2>
-      <p>Contact me via <a href="mailto:kautour@yahoo.com">email</a> or through <a href="https://www.instagram.com/mustafa.otour" target="_blank">Instagram</a> for urgent recoveries or consultations.</p>
-    </div>
-  </section>
+    <section class="stats-section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h3>Achievements</h3>
+          <p>
+            Trusted by influencers, businesses, and public figures across the
+            Arab region
+          </p>
+        </div>
 
-  <footer>
-    <p>© 2025 Moustafa Fadel Outour</p>
-  </footer>
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number" data-count="500">0</span>
+            <span class="stat-label">Accounts Recovered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="50">0</span>
+            <span class="stat-label">Celebrity Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="99">0</span>
+            <span class="stat-label">Success Rate %</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="/cybersecurity/cyberandsocialpage.js"></script>
-</body>
+    <section class="testimonial-gallery fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h3>Client Success Stories</h3>
+          <p>Real results and testimonials from satisfied clients</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="/imageandvideos/recovery-client1.jpg"
+              alt="Recovered Client 1"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/imageandvideos/recovery-client2.jpg"
+              alt="Recovered Client 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <video controls src="/imageandvideos/cyber-highlight1.mp4"></video>
+          </div>
+          <div class="gallery-item">
+            <video controls src="/imageandvideos/cyber-highlight2.mp4"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h3>Need Immediate Help?</h3>
+          <p>
+            Contact me for urgent recoveries, security consultations, or digital
+            protection services
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:kautour@yahoo.com" class="contact-link">
+            📧 Emergency Email
+          </a>
+          <a
+            href="https://www.instagram.com/mustafa.otour"
+            target="_blank"
+            class="contact-link"
+          >
+            📱 Instagram DM
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Moustafa Fadel Outour - Cybersecurity Specialist</p>
+    </footer>
+
+    <script src="/cybersecurity/cyberandsocialpage.js"></script>
+  </body>
 </html>

@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moustafa Outour | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">Moustafa Outour</div>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="floating-particles">
+        <div class="particle gold"></div>
+        <div class="particle blue"></div>
+        <div class="particle green"></div>
+        <div class="particle gold"></div>
+        <div class="particle blue"></div>
+        <div class="particle green"></div>
+    </div>
 
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/index.html" class="active">Home</a></li>
-          <li>
-            <a href="/cybersecurity/cyberandsocialpage.html"
-              >Cybersecurity & Social Media</a
-            >
-          </li>
-          <li><a href="/cinema/cinema.html">Cinematography</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <header>
+        <div class="logo">Moustafa Outour</div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/cybersecurity/cyberandsocialpage.html">Cybersecurity & Social Media</a></li>
+                <li><a href="/cinema/cinema.html">Cinematography</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </header>
 
     <section class="hero">
-      <img
-        src="/imageandvideos/Profile.jpeg"
-        alt="Profile Photo"
-        class="profile-pic"
-      />
-      <h1 id="typed-name"></h1>
-      <p class="subtitle">
-        Cybersecurity Expert | Social Media Consultant | Cinematographer
-      </p>
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src="/imageandvideos/Profile.jpeg" alt="Moustafa Outour">
+            </div>
+        </div>
+        
+        <div class="name-container">
+            <h1 id="typed-name"></h1>
+        </div>
+        
+        <p class="subtitle">
+            Cybersecurity Expert | Social Media Consultant | Cinematographer
+        </p>
+        
+        <div class="specialty-tags">
+            <div class="tag cyber">🔐 Digital Security Specialist</div>
+            <div class="tag cinema">🎬 Professional Cinematographer</div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="#about" class="cta-btn primary">Discover My Work</a>
+            <a href="#contact" class="cta-btn secondary">Get In Touch</a>
+        </div>
     </section>
 
-    <section class="intro">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I specialize in securing websites, applications, and social media
-          accounts. I've recovered over 500+ hacked accounts (Instagram,
-          Facebook, WhatsApp...) and helped influencers build safe digital
-          platforms.
-        </p>
-        <p>
-          I also work in cinematography and media production, contributing to
-          major series like "Al Ajhar" and "Atawla" using top-tier equipment
-          like Alexa Mini and LF.
-        </p>
-      </div>
+    <section class="intro fade-in" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Cybersecurity Excellence</h3>
+                    <p>
+                        I specialize in securing websites, applications, and social media accounts with cutting-edge techniques. I've successfully recovered <span class="stats-highlight">500+ hacked accounts</span> across Instagram, Facebook, WhatsApp, and more, helping influencers and businesses build safe digital platforms.
+                    </p>
+                </div>
+                
+                <div class="about-card cinema">
+                    <h3>Cinematography Mastery</h3>
+                    <p>
+                        Professional cinematographer working on major Arab series like <span class="stats-highlight">"Al Ajhar"</span> and <span class="stats-highlight">"Atawla"</span>. Expert in handling top-tier equipment including Alexa Mini, Alexa LF, and comprehensive Sony camera systems for premium visual storytelling.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-      <p>© 2025 Moustafa Fadel Outour</p>
+    <section class="skills-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Expertise</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-icon">🛡️</span>
+                    <h4>Account Recovery</h4>
+                    <p>Rapid recovery of compromised social media accounts</p>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-icon">🔐</span>
+                    <h4>Security Consulting</h4>
+                    <p>Advanced cybersecurity solutions for businesses</p>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-icon">🎥</span>
+                    <h4>Professional Filming</h4>
+                    <p>High-end cinematography for TV series and productions</p>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-icon">📱</span>
+                    <h4>Social Media Protection</h4>
+                    <p>Comprehensive influencer security services</p>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-icon">🎬</span>
+                    <h4>Media Production</h4>
+                    <p>Complete production support with professional equipment</p>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-icon">🤖</span>
+                    <h4>AI Security Tools</h4>
+                    <p>Advanced AI-powered threat detection and prevention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="mailto:kautour@yahoo.com" class="social-link">📧</a>
+                <a href="https://www.instagram.com/mustafa.otour" target="_blank" class="social-link">📸</a>
+            </div>
+            <p>© 2025 Moustafa Fadel Outour - Digital Security & Cinematography Expert</p>
+        </div>
     </footer>
 
     <script src="/main.js"></script>
-  </body>
+</body>
 </html>
