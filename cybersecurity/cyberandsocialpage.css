@@ -549,7 +549,7 @@ footer {
     right: 0;
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(20px);
-    width: 280px;
+    width: 290px;
     padding: 1rem;
     border-radius: 0 0 15px 15px;
     border: 1px solid var(--cyber-blue);
