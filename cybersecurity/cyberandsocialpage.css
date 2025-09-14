@@ -448,6 +448,9 @@ nav a.active {
   transition: opacity 0.3s ease;
   z-index: 1;
 }
+.gallery-item::before {
+  pointer-events: none;
+}
 
 .gallery-item:hover::before {
   opacity: 1;
